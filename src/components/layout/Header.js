@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
-import { Toggle } from "../buttons/toggle"
+import { Toggle } from "../buttons/Toggle"
 
 export default function Header(props) {
   const menuData = [
