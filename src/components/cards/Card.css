@@ -1,0 +1,64 @@
+.flip-container {
+  background-color: transparent;
+  width: 250px;
+  height: 150px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.flip-container:hover {
+  transform: scale(1.1, 1.1);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+}
+
+/* This container is needed to position the front and back side */
+.flipper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+  transform-style: preserve-3d;
+}
+
+.flip-container.click .flipper {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.front,
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  gap: 10px;
+  align-content: space-evenly;
+}
+
+.front {
+  text-align: center;
+  padding: 0 10px;
+}
+
+.front h3 {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 20px 0 0 20px;
+}
+
+.front p {
+  font-size: 12px;
+}
+
+.back {
+  transform: rotateY(180deg);
+  text-align: center;
+  padding: 20px;
+}
+
+.back p {
+  font-size: 14px;
+}

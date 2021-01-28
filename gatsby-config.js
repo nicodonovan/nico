@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Nico Donovan`,
+    description: `A personal site for Nico Donovan to show off his portfolio and get better at web development`,
+    author: `Nico Donovan`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -13,6 +13,7 @@ module.exports = {
         path: `${__dirname}/static/images`,
       },
     },
+    `gatsby-plugin-styled-components`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

@@ -1,15 +1,15 @@
 import React from "react"
 import Layout from "../components/layout/layout"
 import SEO from "../components/layout/seo"
-import HeroSection from "../components/sections/HeroSection"
+import HeroBlog from "../components/sections/HeroBlog"
 
-function IndexPage() {
+function Blog() {
   return (
     <Layout>
-      <SEO title="Home" />
-      <HeroSection />
+      <SEO title="Blog Page" />
+      <HeroBlog />
     </Layout>
   )
 }
 
-export default IndexPage
+export default Blog
