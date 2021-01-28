@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import phone from "../../../static/images/phone1.jpg"
+import phone from "../../../static/images/phone1.JPG"
 
 export default function HeroBlog() {
   return (
