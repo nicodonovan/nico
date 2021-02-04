@@ -87,7 +87,7 @@ export default function HeroProjects() {
 const Wrapper = styled.div`
   margin: 0 auto;
   max-width: 900px;
-  padding: 50px 0px;
+  padding: 50px 0px 20px 0px;
   display: grid;
   grid-template-rows: auto auto;
   justify-items: center;

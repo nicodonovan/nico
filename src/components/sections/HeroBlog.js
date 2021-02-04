@@ -16,7 +16,7 @@ export default function HeroBlog() {
           <p>
             I put this tab here as a way to hold myself accountable for building
             this feature one day. Throughout the process of building my personal
-            site I have, found that it is a lot more difficult than it looks. I
+            site I have found that it is a lot more difficult than it looks. I
             want this to be the perfect representation of my taste and
             sensibilities so you can get an accurate depiction of my online
             self. Fretting over button placement is enough to launch me down an
@@ -36,7 +36,6 @@ export default function HeroBlog() {
 
 const Wrapper = styled.div`
   margin-top: 50px;
-  margin-bottom: 50px;
 `
 
 const ContentWrapper = styled.div`
@@ -79,14 +78,17 @@ const TextWrapper = styled.div`
   }
 
   img {
-    max-width: 900px;
+    width: 900px;
+    height: 600px;
     border-radius: 1%;
 
     @media (max-width: 768px) {
-      max-width: 675px;
+      width: 675px;
+      height: 450px;
     }
     @media (max-width: 450px) {
-      max-width: 350px;
+      width: 350px;
+      height: 233px;
       padding: 0;
     }
   }

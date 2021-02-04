@@ -57,7 +57,6 @@ export default function HeroAbout() {
 
 const Wrapper = styled.div`
   margin-top: 50px;
-  margin-bottom: 50px;
 `
 
 const ContentWrapper = styled.div`

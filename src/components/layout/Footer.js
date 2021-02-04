@@ -43,7 +43,7 @@ const ContactWrapper = styled.div`
   width: 100%;
   max-width: 900px;
   margin: 0 auto;
-  padding: 40px 0px;
+  padding: 65px 0px;
   justify-content: space-between;
   a {
     color: ${({ theme }) => theme.accent};
@@ -62,7 +62,6 @@ const TextWrapper = styled.div`
   font-size: 12px;
   justify-items: center;
   line-height: 150%;
-  padding: 20px 0px;
 
   @media (max-width: 450px) {
     font-size: 10px;

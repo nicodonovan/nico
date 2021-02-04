@@ -11,9 +11,9 @@ export default function HeroSection() {
           <p>
             Hello! I'm Web Developer, teacher and recovering pre-med student.
             I've had a non-traditional journey in life thus far, but my north
-            star has always been how can I be useful. Right now I'm hoping to
-            land my first job in tech, so let's get in{" "}
-            <a href="#skills">touch!</a>
+            star has always been how can I be useful. I love building minimal,
+            functional front ends, but right now I'm hoping to land my first job
+            in tech so let's get in <a href="#skills">touch!</a>
           </p>
           <Line />
           <h3>What I can do:</h3>
@@ -51,7 +51,6 @@ export default function HeroSection() {
 
 const Wrapper = styled.div`
   margin-top: 50px;
-  margin-bottom: 50px;
 
   a {
     color: ${({ theme }) => theme.accent};
@@ -80,15 +79,18 @@ const ContentWrapper = styled.div`
   margin: 0 auto;
 
   img {
-    max-width: 900px;
+    width: 900px;
+    height: 450px;
     border-radius: 1%;
     margin-bottom: 50px;
 
     @media (max-width: 768px) {
-      max-width: 675px;
+      width: 675px;
+      height: 340px;
     }
     @media (max-width: 450px) {
-      max-width: 350px;
+      width: 350px;
+      height: 175px;
     }
   }
 
@@ -123,7 +125,7 @@ const TextWrapper = styled.div`
     font-weight: 500;
     font-size: 24px;
     margin-top: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
 
     @media (max-width: 450px) {
       font-size: 18px;
@@ -173,5 +175,4 @@ const Line = styled.hr`
   height: 0;
   border-top: 1px solid rgba(0, 0, 0, 0.3);
   border-bottom: 1px solid rgba(255, 255, 255, 0.7);
-  padding: 5px;
 `
